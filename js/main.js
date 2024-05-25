@@ -89,6 +89,7 @@
   { quote: "Don't judge each day by the harvest you reap but by the seeds that you plant.", author: "--Robert Louis Stevenson" }
 ];
 
+
 function getRandomQuote() {
   var randomIndex;
   do {
@@ -97,7 +98,6 @@ function getRandomQuote() {
   previousIndex = randomIndex;
   return quotesWithAuthors[randomIndex];
 }
-
 var previousIndex = null;
 var randomQuote = getRandomQuote();
 document.getElementById("demo").innerHTML = randomQuote.quote;
